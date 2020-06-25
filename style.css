@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+#navbar{
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f1f1ff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  
+  
+}
+#navbar h1{
+    padding: 16px;
+}
+.nav-link {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+#navbar a:hover{
+    background-color: #555;
+  color: white;
+}
+
+main{
+    display: block;
+    margin-left:  20%;
+    padding: 1px 16px;
+  height: 1000px;
+}
+@media screen and (max-width: 700px) {
+    #navbar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    #navbar h1{
+        text-align: center;
+    }
+    #navbar a {float: left;}
+    main {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 600px) {
+    #navbar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  .main-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .main-section h1{
+      text-align: center;
+  }
